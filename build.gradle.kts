@@ -4,11 +4,11 @@ plugins {
 }
 
 group = "org.connecttag.libs.kotlin"
-version = "1.0.4"
+version = "1.0.5"
 
 android {
     namespace = "org.connecttag.lib.billing"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         minSdk = 24
@@ -27,8 +27,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
     publishing {
@@ -39,7 +39,7 @@ android {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
 
 dependencies {
@@ -61,7 +61,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "org.connecttag.libs.kotlin"
                 artifactId = "billing-play-lib"
-                version = "1.0.4"
+                version = "1.0.5"
 
                 pom {
                     name.set("ConnectTag Billing Play Lib")
