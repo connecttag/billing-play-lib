@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "org.connecttag.libs.kotlin"
-version = "1.0.8"
+version = "1.0.9"
 
 android {
     namespace = "org.connecttag.lib.billing"
@@ -61,7 +61,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "org.connecttag.libs.kotlin"
                 artifactId = "billing-play-lib"
-                version = "1.0.8"
+                version = "1.0.9"
 
                 pom {
                     name.set("ConnectTag Billing Play Lib")
